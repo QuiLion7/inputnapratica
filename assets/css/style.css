@@ -1,0 +1,444 @@
+html {
+    font-size: 16px;
+}
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../image/hacker.jpg);
+    background-size:cover;
+    background-position: center;
+    backdrop-filter: blur(10px);
+    font-family: arial;
+}
+header, section, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+}
+header {
+    height: 10vh;
+    color: rgb(55, 0, 255);
+}
+section {
+    height: 80vh;
+}
+footer {
+    height: 10vh;
+    color: #f00;
+}
+.form-geral {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 40px;
+    transition: box-shadow 0.5s;
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+}
+.title, .left, .central, .right, .ending {
+    transition: background 1s;
+    background: rgba(255, 255, 255, 0);
+}
+.title:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+.left:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+.central:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+.right:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+.ending:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+#container {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;    
+}
+.container {
+    width: auto;
+    height: auto;
+}
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 40px 40px 0  0;
+    width: inherit;
+    height: 10%;
+    color: rgb(255, 255, 255);
+    border-bottom: 2px groove rgba(255, 255, 255, 0.1);
+}
+.central {
+    border-left: 2px groove rgba(255, 255, 255, 0.1);
+    border-right: 2px groove rgba(255, 255, 255, 0.1);
+}
+.forms {
+    width: inherit;
+    height: 80%;
+    padding: 0;
+    display:flex;
+    flex-direction: row;
+}
+.container {
+    width: 50%;
+    padding: 10px 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.legend {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+.insert {
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    width:270px;
+    outline: 0;
+}
+.insert:focus {
+    background-color: rgb(226, 231, 255);
+    box-shadow: 0 0 3px rgb(255, 255, 255);
+}
+#date, #hora-desejada, #agenda {
+    height: 15px;
+}
+#cpf, #tel {
+    width: auto;
+}
+#sex {
+    width: 293px;
+}
+#msg {
+    height: 73px;
+}
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;;
+    margin-top: 30px;
+}
+button {
+    width: 45%;
+    height: 30px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.reset {
+    background-color: rgb(212, 212, 186, 0.3); 
+    color: #000; 
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+}
+.reset:hover {
+    background-color: rgb(212, 212, 186);
+    color: #000;
+    box-shadow: 0 0 4px #ffff;
+}
+.submit {
+    background-color: rgb(1, 204, 255, 0.3); 
+    color: #FFF; 
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+}
+.submit:hover {
+    background-color: rgb(1, 204, 255);
+    color: #000;
+    box-shadow: 0 0 4px #ffff;
+}
+.ending {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 0 0 40px 40px;
+    width: inherit;
+    height: 10%;
+    color: rgb(255, 255, 255);
+    border-top: 2px groove rgba(255, 255, 255, 0.1);
+}
+#code-quil {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 50%;
+    transition: 0.5s;
+    opacity: 0.4;
+}
+.code-quil, #barra-progress {
+    opacity: 0.3;
+    transition: 0.5s;
+}
+#barra-progress {
+    width: 225px;
+}
+#barra-progress:hover {
+    opacity: 1;
+}
+#code-quil:hover {
+    opacity: 1;
+}
+.code-quil:hover {
+    opacity: 1;
+}
+.ending-container {
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+.tres {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.tres p {
+    margin: 0 ;
+}
+
+img {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 50%;
+    transition: 0.5s;
+    opacity: 0.4;
+}
+img:hover {
+    opacity: 1;
+    width: 40px;
+    height: 40px;
+}
+a {
+    display: flex;
+    text-decoration: none;
+}
+p{
+    font-size: 1rem;
+    opacity: 0.3;
+    transition: 0.5s;
+}
+p:hover {
+    opacity: 1;
+}
+@media (max-width: 1245px) {
+    header, section, footer {
+        width: 90vw;
+    }
+}
+@media (max-width: 1105px) {
+    .title {
+        font-size: 1.3rem;
+    }
+    .insert {
+        margin-bottom: 15px;
+        font-size: 0.7rem;
+        width:200px;
+    }
+    .legend {
+        font-size:  0.9rem;
+    }
+    #sex {
+        width: 223px;
+    }
+    #date, #hora-desejada, #agenda {
+        height: 12px;
+    }
+    img {
+        width: 20px;
+        height: 20px;
+    }
+    img:hover {
+        opacity: 1;
+        width: 30px;
+        height: 30px;
+    }
+    #code-quil {
+        width: 20px;
+        height: 20px;
+    }
+}
+@media (max-width: 870px) {
+    .title {
+        font-size: 1.2rem;
+    }
+    .insert {
+        margin-bottom: 15px;
+        width:150px;
+    }
+    .legend {
+        font-size:  0.8rem;
+    }
+    #sex {
+        width: 173px;
+    }
+    button {
+        width: 45%;
+        height: 30px;
+        font-size: 0.65rem;
+    }
+    p {
+        font-size: 0.7rem;
+    }
+    #barra-progress {
+        width: 156px;
+    }
+}
+@media (max-width: 700px) {
+    .title {
+        font-size: 1rem;
+    }
+    .insert {
+        margin-bottom: 15px;
+        width:110px;
+        }
+    #sex {
+        width: 133px;
+    }
+    #cpf, #tel {
+        width: 110px;
+    }
+    button {
+        width: 40%;
+        height: 22px;
+        font-size: 0.45rem;
+    }
+    p {
+        font-size: 0.5rem;
+    }
+    img {
+        width: 15px;
+        height: 15px;
+    }
+    img:hover {
+        opacity: 1;
+        width: 25px;
+        height: 25px;
+    }
+    #code-quil {
+        width: 15px;
+        height: 15px;
+    }
+    #barra-progress {
+        width: 106px;
+    }
+    .container {
+        width: 50%;
+        padding: 5px 5px;
+    }
+}
+@media (max-width: 480px) {
+    header {
+        height: 5vh;
+    }
+    section {
+        height: 90vh;
+    }
+    footer {
+        height: 5vh;
+    }
+    .forms {
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+    .container {
+        width: auto;
+        padding: 20px 5px;
+    }
+    .central {
+        border-top: 2px groove rgba(255, 255, 255, 0.1);
+        border-bottom: 2px groove rgba(255, 255, 255, 0.1);
+        border-left: 0px groove rgba(255, 255, 255, 0.1);
+        border-right: 0px groove rgba(255, 255, 255, 0.1);
+    }
+    .insert {
+        margin-bottom: 15px;
+        width:220px;
+    }
+    .legend {
+        font-size:  0.9rem;
+    }
+    #sex {
+        width: 242px;
+    }
+    #cpf, #tel {
+        width: 110px;
+    }
+    button {
+        width: 45%;
+        height: 23px;
+        font-size: 0.75rem;
+    }  
+    .dois {
+        border-left: 1px groove rgba(255, 255, 255, 0.1);
+        border-right: 1px groove rgba(255, 255, 255, 0.1);
+    }
+}
+@media (max-width: 425px) {
+    p {
+        font-size: 0.5rem;
+    }
+    img {
+        width: 13px;
+        height: 13px;
+        margin-right: 2px;
+        margin-left: 2px;
+    }
+    img:hover {
+        opacity: 1;
+        width: 23px;
+        height: 23px;
+    }
+    #code-quil {
+        width: 15px;
+        height: 13px;
+    }
+    #barra-progress {
+        width: 90px;
+    }
+}
+@media (max-width: 371px) {
+    #barra-progress {
+        width: 55px;
+    }
+}

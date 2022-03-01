@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <title>Formulário de Pesquisa</title>
+</head>
+<body>
+    <header class="header">
+        
+    </header>
+    <section class="form-geral">
+        <div id="container">
+            <div class="title">
+                <div>Input na Prática</div>
+            </div>
+            <div class="forms">
+                <div class="container left">
+                    <form class="form1" action="/pages/cadastro.html" target="_blank" method="POST">
+                        <div class="form-group">
+                            <label class="legend" for="name">Nome</label>
+                            <input class="insert" id="name" type="text" name="" required autocomplete="on"/>
+                        </div>
+                        <div class="form-group">
+                            <label class="legend" for="cpf">CPF</label>
+                            <input class="insert" id="cpf" type="text" name="" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" maxlength="14" required/>
+                        </div>
+                        <div class="form-group">
+                            <label class="legend" for="tel">Telefone</label>
+                            <input class="insert" id="tel" type="tel" name="" maxlength="11" required/>
+                        </div> 
+                        <div class="form-group">
+                            <label class="legend" for="senha">Senha</label>
+                            <input class="insert" id="senha" type="password" minlength="4" required />
+                        </div>
+                        <div class="buttons">
+                            <button class="reset" type="reset">RESETAR</button> 
+                            <button class="submit" type="submit">CADASTRAR</button> 
+                        </div>                  
+                    </form>
+                </div>
+                <div class="container central">
+                    <form class="form2" action="/pages/cadastro.html" target="_blank" method="POST">
+                        <div class="form-group">
+                            <label class="legend" for="date">Data de Nascimento</label>
+                            <input class="insert" id="date" type="date" name="" required/>
+                        </div>
+                        <div class="form-group">
+                            <label class="legend" for="hora-desejada">Horário da Consulta</label>
+                            <input class="insert" id="hora-desejada" type="time" name="" autocomplete="on" required/>
+                        </div>
+                        <div class="form-group">
+                            <label class="legend" for="agenda">Agende o Dia</label>
+                            <input class="insert" id="agenda" type="week" name="" required/>
+                        </div>
+                        <div class="form-group">
+                            <label class="legend" for="sex">Sexo</label>
+                            <select class="insert" id="sex" required>
+                                <option selected disabled value="">Selecione</option>
+                                <option value="">Masculino</option>
+                                <option value="">Feminino</option>
+                            </select>
+                        </div>
+                        <div class="buttons">
+                            <button class="reset" type="reset">RESETAR</button> 
+                            <button class="submit" type="submit">CADASTRAR</button> 
+                        </div> 
+                    </form>
+                </div>
+                <div class="container right">
+                    <form class="form3" action="/pages/cadastro.html" target="_blank" method="POST">
+                        <div class="form-group">
+                            <label class="legend" for="site">Site</label>
+                            <input class="insert" id="site" type="url" name=""  required/>
+                        </div>
+                        <div class="form-group">
+                            <label class="legend" for="fav">Nível de Satisfação</label>
+                            <input class="insert" id="fav" type="range" name="" />
+                        </div>
+                        <div class="form-group">
+                            <label class="legend" for="msg">Deixe sua Mensagem</label>
+                            <textarea class="insert" id="msg"></textarea>
+                        </div>
+                        <div class="buttons">
+                            <button class="reset" type="reset">RESETAR</button> 
+                            <button class="submit" type="submit">CADASTRAR</button> 
+                        </div> 
+                    </form>
+                </div>
+            </div>
+            <div class="ending">
+                <div class="ending-container um">
+                    <img id="code-quil" src="./assets/image/cqlogo.png" />
+                    <p class="code-quil">code quil</p>
+                </div>
+                <div class="ending-container dois">
+                    <a href="https://github.com/QuiLion7?tab=repositories" target="_blank">
+                        <img src="./assets/image/icon/github.png"/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/quilion-oliveira-18820b31/" target="_blank">
+                        <img src="./assets/image/icon/logotipo-do-linkedin.png"/>
+                    </a>
+                    <a href="https://www.instagram.com/quilion7/" target="_blank">
+                        <img src="./assets/image/icon/instagram.png"/>
+                    </a>
+                    <a href="https://www.facebook.com/QuiLion/" target="_blank">
+                        <img src="./assets/image/icon/facebook.png"/>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=5588981062656" target="_blank">
+                        <img src="./assets/image/icon/whatsapp.png "/>
+                    </a>
+                </div>
+                <div class="ending-container tres">
+                    <p>developer in preparation</p>
+                    <progress id="barra-progress" value="10" max="100">10%</progress>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            
+        </div>
+    </footer>
+  
+</body>
+</html>
